@@ -1,0 +1,25 @@
+project_laze/
+│
+├── .git/                           # Git repository folder (hidden)
+├── .gitattributes                   # Git attributes file for line endings or other settings
+├── Laze.bash                        # Custom bash script for project
+├── default.txt                      # Stores default settings like sidebar width
+├── can_interface.py                 # CAN interface logic (if used in the project)
+├── customization.py                 # File for customizing project
+├── display_map.py                   # Handles positioning and layout of sidebar buttons
+├── gui.py                           # Main screen logic (MainScreen class)
+├── main.py                          # Entry point for the project (runs the app)
+├── settings.py                      # Logic for settings screen
+├── sidebar.py                       # Logic for sidebar buttons and layout
+├── __pycache__/                     # Python cache folder (ignored by Git)
+│   └── various cached .pyc files
+│
+└── assets/                          # Folder for images and icons
+    ├── background.jpg               # Main background image
+    ├── bg_1.jpg                     # Optional background image
+    ├── bg_2.jpg                     # Optional background image
+    ├── bg_3.jpg                     # Optional background image
+    ├── bg_4.jpg                     # Optional background image
+    ├── gear_icon.png                # Icon for the settings button
+    ├── music-icon.png               # Icon for the music player button
+    └── steering-icon.png            # Icon for the steering wheel (or other purpose)
