@@ -27,6 +27,9 @@ class SettingsScreen(Screen):
         self.sidebar.size_hint_x = App.get_running_app().get_sidebar_width()
         layout.add_widget(self.sidebar)
 
+        # Bind sidebar settings button to go back to the main screen
+        self.sidebar.settings_button.bind(on_press=self.go_back_to_main)
+
         # Create buttons for Screen, Dash, and General settings
         self.screen_button = Button(text='Screen', size_hint=(None, None), size=(200, 100),
                                     pos_hint={'center_x': 0.5, 'y': 0.7},
@@ -98,4 +101,6 @@ class SettingsScreen(Screen):
         general_popup.open()
 
     def go_back_to_main(self, instance):
+        # Go back to the main screen when pressing the settings icon or back button
+        print("Returning to main screen")
         self.manager.current = 'main'

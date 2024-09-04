@@ -1,25 +1,35 @@
 project_laze/
 │
-├── .git/                           # Git repository folder (hidden)
-├── .gitattributes                   # Git attributes file for line endings or other settings
-├── Laze.bash                        # Custom bash script for project
-├── default.txt                      # Stores default settings like sidebar width
-├── can_interface.py                 # CAN interface logic (if used in the project)
-├── customization.py                 # File for customizing project
-├── display_map.py                   # Handles positioning and layout of sidebar buttons
-├── gui.py                           # Main screen logic (MainScreen class)
-├── main.py                          # Entry point for the project (runs the app)
-├── settings.py                      # Logic for settings screen
-├── sidebar.py                       # Logic for sidebar buttons and layout
-├── __pycache__/                     # Python cache folder (ignored by Git)
-│   └── various cached .pyc files
+├── assets/
+│   ├── background.jpg
+│   ├── bg_1.jpg
+│   ├── bg_2.jpg
+│   ├── bg_3.jpg
+│   ├── bg_4.jpg
+│   ├── gear_icon.png
+│   ├── music-icon.png
+│   └── steering-icon.png
 │
-└── assets/                          # Folder for images and icons
-    ├── background.jpg               # Main background image
-    ├── bg_1.jpg                     # Optional background image
-    ├── bg_2.jpg                     # Optional background image
-    ├── bg_3.jpg                     # Optional background image
-    ├── bg_4.jpg                     # Optional background image
-    ├── gear_icon.png                # Icon for the settings button
-    ├── music-icon.png               # Icon for the music player button
-    └── steering-icon.png            # Icon for the steering wheel (or other purpose)
+├── debug/
+│   ├── touch_log.txt
+│   └── screen_log.txt
+│
+├── __pycache__/ 
+│   ├── display_map.cpython-39.pyc
+│   ├── gui.cpython-312.pyc
+│   ├── gui.cpython-39.pyc
+│   ├── screen.cpython-312.pyc
+│   ├── settings.cpython-312.pyc
+│   ├── settings.cpython-39.pyc
+│   ├── sidebar.cpython-312.pyc
+│   └── sidebar.cpython-39.pyc
+│
+├── .gitignore
+├── default.txt
+├── display_map.py
+├── gui.py
+├── main.py
+├── settings.py
+├── sidebar.py
+├── debug.py
+└── Laze.graphql

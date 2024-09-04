@@ -1,0 +1,2 @@
+[2024-09-04 22:55:31] Button Pressed: Settings Button
+[2024-09-04 22:55:40] Button Pressed: Music Button
